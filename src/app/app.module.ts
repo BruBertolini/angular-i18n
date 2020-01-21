@@ -11,6 +11,7 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { HomeComponent } from "./home/home.component";
 import { ChangeLangComponent } from './change-lang/change-lang.component';
 import { GlobalTranslateService } from './services/global-translate.service';
+import { NewModuleTranslateModule } from './new-module-translate/new-module-translate.module';
 
 registerLocaleData(localeFr, "fr");
 
@@ -22,6 +23,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [AppComponent, UnderConstructionComponent, HomeComponent, ChangeLangComponent],
   imports: [
     BrowserModule,
+    NewModuleTranslateModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
