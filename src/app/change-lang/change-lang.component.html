@@ -1,0 +1,24 @@
+<div>
+  <div (click)="changeLang(languagesEnum.FRENCH)">
+    <img
+      src="/assets/img/flags/france.svg"
+      alt="{{ 'change-language.french' | translate }}"
+    />
+    <span [class.active]="currentLang == languagesEnum.FRENCH" >{{ 'change-language.french' | translate }}</span>
+  </div>
+  <div (click)="changeLang(languagesEnum.ENGLISH)">
+    <img
+      src="/assets/img/flags/usa.svg"
+      alt="{{ 'change-language.english' | translate }}"
+    />
+    <span [class.active]="currentLang == languagesEnum.ENGLISH">{{ 'change-language.english' | translate }}</span>
+  </div>
+  <div (click)="changeLang(languagesEnum.PORTUGUESE_BRAZIL)">
+    <img
+      src="/assets/img/flags/brazil.svg"
+      alt="{{ 'change-language.portuguese' | translate }}"
+    />
+    <span [class.active]="currentLang == languagesEnum.PORTUGUESE_BRAZIL">{{ 'change-language.portuguese' | translate }}</span>
+  </div>
+  
+</div>

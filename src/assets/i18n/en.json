@@ -1,0 +1,11 @@
+{
+    "home": {
+        "welcome": "Welcome!",
+        "under-construction": "This website is under construction"
+    },
+    "change-language":{
+        "english": "English",
+        "french": "French",
+        "portuguese":"Portuguese"
+    }
+}
